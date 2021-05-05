@@ -244,3 +244,7 @@ def muda(dic):
     dic.setdefault('1234', 'Dart Vader')
 
 print(muda(contato))
+
+#using a new default
+
+#2 start something here right now, we need:
