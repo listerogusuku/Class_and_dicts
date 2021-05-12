@@ -1,4 +1,4 @@
-'''
+
 def contabiliza_combustivel(dicionario_de_vendas):
     dic = {}
     for diaria in dicionario_de_vendas:
@@ -10,7 +10,6 @@ def contabiliza_combustivel(dicionario_de_vendas):
             dic[dicionario_de_vendas[diaria]['tipo']] = {'total litros': dicionario_de_vendas[diaria]['litros'], 'custo por litro': dicionario_de_vendas[diaria]['custo']}
 
     return dic
-'''
 
 
 def contabiliza_combustivel(dicionario_de_vendas):
@@ -24,9 +23,6 @@ def contabiliza_combustivel(dicionario_de_vendas):
             dic[dicionario_de_vendas[diaria]['tipo']]={'total litros':dicionario_de_vendas[diaria]['litros'],'custo por litro':dicionario_de_vendas[diaria]['custo']}
 
     return dic
-
-
-
 
 
 entrada = {
@@ -48,7 +44,6 @@ entrada = {
 }
 
 
-'''
 {
     'dia 1': {
         'tipo': 'Etanol',
@@ -71,5 +66,5 @@ entrada = {
         'custo': 70.0
     }
 }
-'''
+
 print(contabiliza_combustivel(entrada))

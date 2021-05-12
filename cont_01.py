@@ -1,4 +1,3 @@
-'''
 def contabiliza_combustivel(dicionario_de_vendas):
     dic={}
     for diaria in dicionario_de_vendas:
@@ -9,24 +8,11 @@ def contabiliza_combustivel(dicionario_de_vendas):
             dic[dicionario_de_vendas[diaria]['tipo']] = {'total litros':dicionario_de_vendas[diaria]['litros'],'custo por litro':dicionario_de_vendas[diaria]['custo']/dicionario_de_vendas[diaria]['litros']}
 
     return dic
-'''
-
-def contabiliza_combustivel(dicionario_de_vendas):
-    dic={}
-    for diaria in dicionario_de_vendas:
-        if dicionario_de_vendas[diaria]['tipo'] in dic:
-            dic[dicionario_de_vendas[diaria]['tipo']]['total litros']+=dicionario_de_vendas[diaria]['litros']
-            dic[dicionario_de_vendas[diaria]['tipo']]['custo por litro']+=dicionario_de_vendas[diaria]['custo']
-            dic[dicionario_de_vendas[diaria]['tipo']]['custo por litro']=dic[dicionario_de_vendas[diaria]['tipo']]['custo por litro']/dic[dicionario_de_vendas[diaria]['tipo']]['total litros']
-        else:
-            dic[dicionario_de_vendas[diaria]['tipo']]={'total litros':dicionario_de_vendas[diaria]['litros'],'custo por litro':dicionario_de_vendas[diaria]['custo']}
-
-    return dic
 
 
 
 
-'''
+
 cont_comb = {
     'dia 3': {
         'tipo': 'Ar',
@@ -44,7 +30,7 @@ cont_comb = {
         'custo': 10.0
     }
 }
-'''
+
 
 
 cont_comb = {
